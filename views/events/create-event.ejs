@@ -1,0 +1,27 @@
+<%- include('../partials/head') %>
+<%- include('../partials/nav', {page: 'create'}) %>
+
+<div class="container my-5">
+  <h1>Create New Event</h1>
+  <form action="/events" method="POST">
+    <div class="mb-3">
+      <label for="eventName" class="form-label">Event Name</label>
+      <input type="text" class="form-control" id="eventName" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="eventDate" class="form-label">Date</label>
+      <input type="date" class="form-control" id="eventDate" name="date" required>
+    </div>
+    <div class="mb-3">
+      <label for="eventLocation" class="form-label">Location</label>
+      <input type="text" class="form-control" id="eventLocation" name="location" required>
+    </div>
+    <div class="mb-3">
+      <label for="eventDescription" class="form-label">Description</label>
+      <textarea class="form-control" id="eventDescription" name="description" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Event</button>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>

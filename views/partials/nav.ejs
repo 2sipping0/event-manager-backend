@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="container navbar-container">
+      <a href="/" class="navbar-brand">Tinko Events</a>
+      <button class="navbar-toggler" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-list" id="navList">
+        <li class="nav-item">
+          <a class="nav-link <%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= typeof page !== 'undefined' && page === 'events' ? 'active' : '' %>" href="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= typeof page !== 'undefined' && page === 'create' ? 'active' : '' %>" href="/events/create">Create Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= typeof page !== 'undefined' && page === 'contact' ? 'active' : '' %>" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
